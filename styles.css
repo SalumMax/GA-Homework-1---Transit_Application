@@ -1,0 +1,95 @@
+:root {
+    --primary: hsl(290, 69%, 41%);
+    --business: #3A82EE;
+    --personal: var(--primary);
+    --light: rgb(248, 246, 246);
+    --grey: #888;
+    --dark: #313154;
+    --danger: #ff5b57;
+    --shadow: 0 1px 3px rgba(0,0,0,0.1);
+    --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+    --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+
+input:not button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: none;
+}
+body {
+    background: var(--dark);
+    color: var(--light);
+}
+
+nav {
+    background-color: #FFF;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h3 { 
+    color: var(--light);
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+h4{
+    color: var(--light);
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin: 0.5rem 0.5rem; 
+}
+label {
+    color: var(--light);
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 1rem 1rem; 
+}
+
+.plan-trip input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: var(--dark);
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.75rem;
+}
+
+.plan-trip button[type="button"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color:#FFF;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: var(--personal-glow);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button[type="button"]:hover{
+    opacity: 0.75;
+}
+.search-result {
+   margin: 1rem 0;
+   display: block;
+   width: 100%;   
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transit Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <main class="app">
+        <nav>
+            <img src="images/logo.svg" alt="logo" class="logo">
+        </nav>
+        <!-- New Search -->
+        <section class="plan-trip">
+            <h3>PLAN YOUR TRIP</h3>
+            <form id="new-trip-form">
+                <h4> </h4>
+                <label>Travel from:</label>
+                <input  id="start-station" type="text" name="content"  placeholder="e.g. Central"/>
+                <label>Travel to:</label>
+                <input  id="end-station" type="text" name="content"  placeholder="e.g. Redfern"/>
+                <button type="button"  id="submit" onclick="travelFrom()">See your trip</button>  
+            </form> 
+        </section>
+        <!-- End of New Search -->
+
+        <!-- Results -->
+        <section class="result">
+             <h4 id="search-results"></h4>
+        <!-- <div class="list" id="search-result"> -->
+
+        <!--End of Results-->
+
+        </section>
+
+    </main>
+        
+
+
+    <script src="main.js"></script>
+</body>
+</html>
