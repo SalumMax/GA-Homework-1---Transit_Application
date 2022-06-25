@@ -33,14 +33,19 @@ const travelFrom = ()=>{
             stationsListArr.push(stations[i]); //adding stations with index 'i' to the array
             console.log(stationsListArr);
             document.addEventListener('click', ()=>{
-            document.getElementById('search-results').innerHTML = `You will need to travel the following ${numOfStops} stops: ${stationsListArr} `;})
+            document.getElementById('search-results').innerHTML = `You will need to travel the following ${numOfStops} stops: ${stationsListArr} `;
+            document.getElementById('search-result').reset();
+        })
+            
             }}
 //Moving backwards
     else if (start > finish) {
             for (i= start; i>finish; i--){  
             stationsListArr.push(stations[i]); 
             document.addEventListener('click', ()=>{
-            document.getElementById('search-results').innerHTML = `You will need to travel the following ${numOfStops*-1} stops: ${stationsListArr} `;})
+            document.getElementById('search-results').innerHTML = `You will need to travel the following ${numOfStops*-1} stops: ${stationsListArr} `;
+            document.getElementById('search-result').reset();})
+            
             }}
 };
 
