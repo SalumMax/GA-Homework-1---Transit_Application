@@ -41,7 +41,7 @@ const travelFrom = ()=>{
 //Moving backwards
     else if (start > finish) {
             for (i= start; i>finish; i--){  
-            stationsListArr.push(stations[i]); 
+            stationsListArr.push(stations[i+1]); 
             document.addEventListener('click', ()=>{
             document.getElementById('search-results').innerHTML = `You will need to travel the following ${numOfStops*-1} stops: ${stationsListArr} `;
             document.getElementById('search-result').reset();})
